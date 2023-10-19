@@ -4,17 +4,23 @@
 1 -> нет*/
 
 Console.WriteLine("Введите число:");
-string str = Console.ReadLine();
+string? str = Console.ReadLine();
 int number = Convert.ToInt32(str);
 
+
+if ( number <= 5) 
+{ 
+    Console.WriteLine("Нет");
+}
 if ( number == 6 || number == 7) 
 {
     Console.WriteLine("Да");
 }
-else 
-{ 
-    Console.WriteLine("Нет");
+if (number >= 8)
+{
+    Console.WriteLine("В неделе 7 дней");
 }
+
 
 
 
